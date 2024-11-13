@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 db_password = os.getenv('DB_PASSWORD')
-db_username = os.getenv('DB_USERNAME')
+db_username = os.getenv('DB_USER')
 
 DATABASES = {
     'default': {
