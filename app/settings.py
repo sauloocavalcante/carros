@@ -78,7 +78,6 @@ WSGI_APPLICATION = 'app.wsgi.application'
 
 db_password = os.getenv('DB_PASSWORD')
 db_username = os.getenv('DB_USER')
-host = os.getenv('IP_AWS')
 
 DATABASES = {
     'default': {
@@ -86,7 +85,7 @@ DATABASES = {
         'NAME': 'carros',
         'USER': db_username,
         'PASSWORD': db_password,
-        'HOST': host,
+        'HOST': '*',
         'PORT': '5432',
     }
 }
